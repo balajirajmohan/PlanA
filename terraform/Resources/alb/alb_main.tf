@@ -1,5 +1,5 @@
 module "alb" {
-  source                           = "git@github.com:nectar-uk/nectar-terraform-modules.git//terraform-aws-new-alb"
+  source                           = "../../modules/terraform-aws-new-alb"
   load_balancer_name               = var.alb_name
   load_balancer_is_internal        = var.alb_is_internal
   security_groups                  = [aws_security_group.alb_sg.id]
